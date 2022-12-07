@@ -40,3 +40,28 @@ plt.title ('Fertility Rates')
 plt.xlabel('Ages')
 plt.ylabel('ASFR Value')
 plt.show()
+
+
+
+
+ax = plt.gca()
+
+a_df_extract.plot( ax = ax, color='pink', figsize=(20, 10))
+b_df_extract.plot( ax = ax, color='red', figsize=(20, 10))
+c_df_extract.plot( ax = ax, color='orange', figsize=(20, 10))
+d_df_extract.plot( ax = ax, color='yellow', figsize=(20, 10))
+e_df_extract.plot( ax = ax, color='teal', figsize=(20, 10))
+f_df_extract.plot( ax = ax, color='blue', figsize=(20, 10))
+g_df_extract.plot( ax = ax, color='indigo', figsize=(20, 10))
+h_df_extract.plot( ax = ax, color='violet', figsize=(20, 10))
+i_df_extract.plot( ax = ax, color='black', figsize=(20, 10))
+
+ax.legend(['1933 - 1939', '1940 - 1949', '1950 - 1959', '1960 - 1961', '1970 - 1979', 
+           '1980 - 1989', '1990 - 1999', '2000 - 2009', '2010 - 2020'])
+
+ax.set_xlim((12, 55))
+ax.set_xlabel("Age (years)", fontsize = 18)
+ax.set_ylabel("Average ASFR", fontsize = 18)
+ax.set_title("Average ASFR of People Aged 12-55+ from 1933-2020 in the U.S.", fontsize=25)
+
+plt.show()
